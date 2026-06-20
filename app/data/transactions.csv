@@ -1,0 +1,101 @@
+TransactionID,Date,Type,Category,Description,PaymentMethod,Amount
+TXN0001,2026-01-01,Income,Salary,Monthly Salary,Bank Transfer,35000.0
+TXN0002,2026-01-01,Transfer,Savings,Emergency Fund,Bank Transfer,5000.0
+TXN0003,2026-01-02,Expense,Groceries,Supermarket,Debit Card,1845.6
+TXN0004,2026-01-02,Expense,Coffee,Cafe Latte,GCash,185.0
+TXN0005,2026-01-03,Expense,Transportation,Grab,GCash,240.0
+TXN0006,2026-01-03,Expense,Dining,Lunch,Credit Card,325.5
+TXN0007,2026-01-04,Expense,Entertainment,Netflix,Credit Card,549.0
+TXN0008,2026-01-04,Expense,Utilities,Electric Bill,Online Banking,2150.8
+TXN0009,2026-01-05,Expense,Internet,Fiber Internet,Online Banking,1699.0
+TXN0010,2026-01-05,Expense,Shopping,Clothes,Debit Card,2890.0
+TXN0011,2026-01-06,Expense,Health,Pharmacy,Debit Card,690.5
+TXN0012,2026-01-07,Income,Freelance,Logo Design,PayPal,4500.0
+TXN0013,2026-01-07,Expense,Groceries,Convenience Store,GCash,385.25
+TXN0014,2026-01-08,Expense,Dining,Restaurant,Credit Card,920.0
+TXN0015,2026-01-08,Expense,Transportation,Gasoline,Credit Card,2100.0
+TXN0016,2026-01-09,Expense,Education,Udemy Course,Credit Card,1199.0
+TXN0017,2026-01-10,Expense,Coffee,Iced Coffee,GCash,170.0
+TXN0018,2026-01-10,Expense,Entertainment,Movie Tickets,GCash,580.0
+TXN0019,2026-01-11,Expense,Groceries,Supermarket,Debit Card,1620.35
+TXN0020,2026-01-12,Income,Cashback,Credit Card Cashback,Credit Card,350.0
+TXN0021,2026-01-13,Expense,Rent,Monthly Rent,Bank Transfer,12000.0
+TXN0022,2026-01-14,Expense,Shopping,Shoes,Debit Card,3499.0
+TXN0023,2026-01-15,Expense,Dining,Fast Food,GCash,285.0
+TXN0024,2026-01-16,Transfer,Investment,Index Fund,Bank Transfer,3000.0
+TXN0025,2026-01-17,Expense,Utilities,Water Bill,Online Banking,875.0
+TXN0026,2026-01-18,Expense,Transportation,Bus Fare,Cash,45.0
+TXN0027,2026-01-19,Expense,Health,Dental Checkup,Debit Card,1800.0
+TXN0028,2026-01-20,Expense,Dining,Pizza,Credit Card,760.0
+TXN0029,2026-01-21,Income,Bonus,Performance Bonus,Bank Transfer,5000.0
+TXN0030,2026-01-22,Expense,Shopping,Headphones,Credit Card,2599.0
+TXN0031,2026-01-23,Expense,Groceries,Supermarket,Debit Card,1910.4
+TXN0032,2026-01-24,Expense,Coffee,Americano,GCash,160.0
+TXN0033,2026-01-25,Expense,Entertainment,Spotify,Credit Card,149.0
+TXN0034,2026-01-26,Expense,Transportation,Grab,GCash,280.0
+TXN0035,2026-01-27,Expense,Dining,Sushi,Credit Card,1150.0
+TXN0036,2026-01-28,Transfer,Savings,Vacation Fund,Bank Transfer,4000.0
+TXN0037,2026-01-29,Expense,Shopping,Books,Debit Card,980.0
+TXN0038,2026-01-30,Expense,Utilities,Mobile Load,GCash,300.0
+TXN0039,2026-01-31,Expense,Groceries,Supermarket,Debit Card,1735.2
+TXN0040,2026-02-01,Income,Salary,Monthly Salary,Bank Transfer,35000.0
+TXN0041,2026-02-01,Expense,Rent,Monthly Rent,Bank Transfer,12000.0
+TXN0042,2026-02-02,Expense,Coffee,Cappuccino,GCash,190.0
+TXN0043,2026-02-02,Expense,Transportation,Grab,GCash,260.0
+TXN0044,2026-02-03,Expense,Groceries,Supermarket,Debit Card,1985.7
+TXN0045,2026-02-04,Expense,Dining,Ramen,Credit Card,680.0
+TXN0046,2026-02-05,Income,Freelance,Website Update,PayPal,3800.0
+TXN0047,2026-02-05,Expense,Shopping,Keyboard,Credit Card,4200.0
+TXN0048,2026-02-06,Expense,Utilities,Electric Bill,Online Banking,2280.5
+TXN0049,2026-02-07,Expense,Internet,Fiber Internet,Online Banking,1699.0
+TXN0050,2026-02-08,Expense,Entertainment,Steam Game,Credit Card,799.0
+TXN0051,2026-02-09,Expense,Health,Gym Membership,Debit Card,1500.0
+TXN0052,2026-02-10,Expense,Dining,Coffee Shop,GCash,240.0
+TXN0053,2026-02-11,Transfer,Investment,ETF Deposit,Bank Transfer,3500.0
+TXN0054,2026-02-12,Expense,Transportation,Gasoline,Credit Card,2250.0
+TXN0055,2026-02-13,Expense,Shopping,Monitor,Credit Card,8500.0
+TXN0056,2026-02-14,Expense,Gifts,Valentine Gift,Credit Card,2750.0
+TXN0057,2026-02-15,Income,Refund,Returned Item,Debit Card,950.0
+TXN0058,2026-02-16,Expense,Groceries,Supermarket,Debit Card,1645.3
+TXN0059,2026-02-17,Expense,Coffee,Cold Brew,GCash,180.0
+TXN0060,2026-02-18,Expense,Dining,Burger,Credit Card,355.0
+TXN0061,2026-02-19,Expense,Entertainment,Cinema,Credit Card,420.0
+TXN0062,2026-02-20,Expense,Transportation,Bus Fare,Cash,60.0
+TXN0063,2026-02-21,Income,Investment,Dividend,Bank Transfer,1200.0
+TXN0064,2026-02-22,Expense,Utilities,Water Bill,Online Banking,910.0
+TXN0065,2026-02-23,Expense,Education,Programming Book,Credit Card,1450.0
+TXN0066,2026-02-24,Expense,Groceries,Supermarket,Debit Card,1880.9
+TXN0067,2026-02-25,Expense,Dining,Restaurant,Credit Card,940.0
+TXN0068,2026-02-26,Transfer,Savings,Emergency Fund,Bank Transfer,4500.0
+TXN0069,2026-02-27,Expense,Coffee,Mocha,GCash,195.0
+TXN0070,2026-02-28,Expense,Shopping,Office Chair,Credit Card,6800.0
+TXN0071,2026-03-01,Income,Salary,Monthly Salary,Bank Transfer,35000.0
+TXN0072,2026-03-01,Expense,Rent,Monthly Rent,Bank Transfer,12000.0
+TXN0073,2026-03-02,Expense,Groceries,Supermarket,Debit Card,1765.5
+TXN0074,2026-03-03,Expense,Dining,Chicken Meal,GCash,245.0
+TXN0075,2026-03-04,Expense,Coffee,Flat White,GCash,210.0
+TXN0076,2026-03-05,Expense,Transportation,Grab,GCash,275.0
+TXN0077,2026-03-06,Income,Freelance,Mobile App UI,PayPal,6200.0
+TXN0078,2026-03-07,Expense,Entertainment,Disney+,Credit Card,369.0
+TXN0079,2026-03-08,Expense,Shopping,Mouse,Credit Card,1899.0
+TXN0080,2026-03-09,Expense,Utilities,Electric Bill,Online Banking,2090.4
+TXN0081,2026-03-10,Expense,Health,Clinic Visit,Debit Card,850.0
+TXN0082,2026-03-11,Expense,Education,Online Course,Credit Card,2200.0
+TXN0083,2026-03-12,Transfer,Investment,Stock Investment,Bank Transfer,5000.0
+TXN0084,2026-03-13,Expense,Dining,Steakhouse,Credit Card,1650.0
+TXN0085,2026-03-14,Expense,Groceries,Supermarket,Debit Card,1940.6
+TXN0086,2026-03-15,Expense,Coffee,Espresso,GCash,150.0
+TXN0087,2026-03-16,Income,Interest,Savings Interest,Bank Transfer,125.75
+TXN0088,2026-03-17,Expense,Transportation,Gasoline,Credit Card,2300.0
+TXN0089,2026-03-18,Expense,Shopping,Desk Lamp,Debit Card,1200.0
+TXN0090,2026-03-19,Expense,Entertainment,Concert Ticket,Credit Card,3200.0
+TXN0091,2026-03-20,Expense,Utilities,Water Bill,Online Banking,930.0
+TXN0092,2026-03-21,Expense,Dining,Cafe Brunch,Credit Card,590.0
+TXN0093,2026-03-22,Expense,Groceries,Supermarket,Debit Card,1810.0
+TXN0094,2026-03-23,Expense,Transportation,Bus Fare,Cash,55.0
+TXN0095,2026-03-24,Transfer,Savings,Emergency Fund,Bank Transfer,5500.0
+TXN0096,2026-03-25,Income,Gift,Birthday Gift,Bank Transfer,3000.0
+TXN0097,2026-03-26,Expense,Health,Medicine,Debit Card,420.0
+TXN0098,2026-03-27,Expense,Shopping,Bluetooth Speaker,Credit Card,2750.0
+TXN0099,2026-03-28,Expense,Dining,Japanese Restaurant,Credit Card,980.0
+TXN0100,2026-03-30,Expense,Travel,Weekend Trip,Credit Card,5200.0

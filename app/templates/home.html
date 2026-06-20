@@ -1,117 +1,96 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dashboard i think</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
-</head>
+{% block title %}Home - Finance Dashboard{% endblock %}
 
-<body>
-    <nav id="sidebar">
-        <ul>
-            <li>
-                <span class="logo">gas2s</span>
-                <button onclick=toggleSidebar() id="toggle-btn">
-                    <!--add svg icon here-->
-                </button>
-            </li>
-            <li class="active">
-                <a href="home.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#e3e3e3">
-                        <path
-                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
-                    </svg>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <button onclick=toggleSubmenu() class="dropdown-btn">
-                    <span>smth smth</span>
-                </button>
-                <ul class="submenu">
-                    <div>
-                        <li><a href="#">something</a></li>
-                        <li><a href="#">something</a></li>
-                        <li><a href="#">something</a></li>
-                    </div>
-                </ul>
-            </li>
-            <li>
-                <a href="home.html">
-                    <!--<svg></svg>-->
-                    <span>Transactions</span>
-                </a>
-            </li>
-            <li>
-                <a href="home.html">
-                    <!--<svg></svg>-->
-                    <span>Budgets</span>
-                </a>
-            </li>
-            <li>
-                <a href="home.html">
-                    <!--<svg></svg>-->
-                    <span>Goals</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <div class="header">
-            <h3 id="greeting">
-                </h4>
-                <div class="utility">
-                    <button onclick=openNotifs() id="notif-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                            <path
-                                d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
-                        </svg>
-                    </button>
-                    <button onclick=openNotifs() id="notif-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                            <path
-                                d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
-                        </svg>
-                    </button>
+{% block content %}
+<div class="header">
+    <h3 id="greeting">
+        </h4>
+        <div class="utility">
+            <button onclick=openNotifs() id="notif-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path
+                        d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
+                </svg>
+            </button>
+            <button onclick=openNotifs() id="notif-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                    <path
+                        d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
+                </svg>
+            </button>
 
-                </div>
         </div>
-        <div class="money-overview">
-            <div class="home-container">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#e3e3e3">
-                        <path
-                            d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z" />
-                    </svg>
-                    <h2>Current Balance</h2>
-                </span>
-                <h3 id="weekly-balance">Php 1,000</h3>
-            </div>
-            <div class="spent-container">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        fill="#e3e3e3">
-                        <path
-                            d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z" />
-                    </svg>
-                    <h2>Spent This Week</h2>
-                </span>
-                <h3 id="weekly-balance">Php 1,000</h3>
-            </div>
+</div>
+<div class="money-overview">
+    <div class="home-container">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path
+                    d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z" />
+            </svg>
+            <h2>Current Balance</h2>
+        </span>
+        <h3 id="weekly-balance">Php 1,000</h3>
+    </div>
+    <div class="spent-container">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path
+                    d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z" />
+            </svg>
+            <h2>Spent This Week</h2>
+        </span>
+        <h3 id="weekly-balance">Php 1,000</h3>
+    </div>
+    <div class="saved-container">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path
+                    d="M200-280v-280h80v280h-80Zm240 0v-280h80v280h-80ZM80-120v-80h800v80H80Zm600-160v-280h80v280h-80ZM80-640v-80l400-200 400 200v80H80Zm178-80h444-444Zm0 0h444L480-830 258-720Z" />
+            </svg>
+            <h2>Saved So Far</h2>
+        </span>
+        <h3 id="weekly-balance">Php 1,000</h3>
+    </div>
+</div>
+<div class="latest-transactions">
+    <div class="transactions-container">
+        <span>
+            <h2>Latest Transactions</h2>
+            <a href="{{ url_for('transactions')}}">View All</a>
+        </span>
+        <div class="transactions">
+            <table id="transactions-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction.TransactionID }}</td>
+                        <td>{{ transaction.Date }}</td>
+                        <td>{{ transaction.Type }}</td>
+                        <td>{{ transaction.Category }}</td>
+                        <td>{{ transaction.Description }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
-        <div class="chart-container">
-        </div class="chart">
-        
-        </div>
-            <a href="/dash/" class="dash-link">
-            <span>Plotly Dash</span>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-    </main>
-</body>
+    </div>
+</div>
+</div class="chart">
 
-</html>
+</div>
+<a href="/dash/" class="dash-link">
+    <span>Plotly Dash</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+{% endblock %}

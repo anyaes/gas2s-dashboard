@@ -13,5 +13,8 @@ def init_app():
         # initialize plotly dashboard
         app = init_dashboard(app)
 
+        app.config['TEMPLATES_AUTO_RELOAD'] = True
+        app.config['DEBUG'] = True
+
         return app
     

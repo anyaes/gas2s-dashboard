@@ -11,4 +11,4 @@ COPY ./app ./app
 
 EXPOSE 3000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:3000", "wsgi:app"]
+CMD ["gunicorn", "--reload", "--bind", "0.0.0.0:3000", "wsgi:app"]

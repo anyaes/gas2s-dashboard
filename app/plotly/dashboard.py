@@ -1,5 +1,5 @@
 import dash as dash
-from dash import html
+from dash import html, dcc
 
 def init_dashboard(server):
     dash_app = dash.Dash(

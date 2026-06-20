@@ -1,0 +1,2 @@
+TransactionID,Date,Type,Category,Description,PaymentMethod,Amount
+TXN0001,2026-01-01,Income,Scam,Scam Attempt,Bank Transfer,35000.00

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard i think</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li>
+                <span class="logo">gas2s</span>
+                <button onclick=toggleSidebar() id="toggle-btn">
+                    <!--add svg icon here-->
+                </button>
+            </li>
+            <li class="active">
+                <a href="{{ url_for('home')}}">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e3e3e3">
+                        <path
+                            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('transactions') }}">
+                    <!--<svg></svg>-->
+                    <span>Transactions</span>
+                </a>
+            </li>
+            <li>
+                <button onclick=toggleSubmenu() class="dropdown-btn">
+                    <span>Transactions</span>
+                </button>
+                <ul class="submenu">
+                    <div>
+                        <li><a href="#">Daily</a></li>
+                        <li><a href="#">Monthly</a></li>
+                        <li><a href="#">Yearly</a></li>
+                    </div>
+                </ul>
+            </li>
+            <li>
+                <a href="home.html">
+                    <!--<svg></svg>-->
+                    <span>Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <!--<svg></svg>-->
+                    <span>Budgeting</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <!--<svg></svg>-->
+                    <span>Goals</span>
+                </a>
+            </li>
+            <li>
+                <a href="home.html">
+                    <!--<svg></svg>-->
+                    <span>Settings</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+
+</html>
